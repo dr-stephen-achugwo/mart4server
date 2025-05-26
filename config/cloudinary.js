@@ -1,14 +1,23 @@
 //import {v2 as cloudinary} from 'cloudinary'
-const cloudinary = require('cloudinary');
+//const cloudinary = require('cloudinary');
 //import cloudinary from 'cloudinary'; 
 //const { v2 } = cloudinary; 
 
+import dotenv from "dotenv";
+dotenv.config();
+import { v2 } from "cloudinary";
+
 const connectCloudinary=async ()=> {
-  cloudinary.config({
+  v2.config({  
     cloud_name: process.env.CLOUDINARY_NAME,
     api_key: process.env.CLOUDINARY_API_KEY,
     api_secret:process.env.CLOUDINARY_SECRET_KEY
   })
 }
-module.exports = connectCloudinary;
+export default connectCloudinary;
+
+
+//module.exports = connectCloudinary;
 //export default connectCloudinary;
+
+
