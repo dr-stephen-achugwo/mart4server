@@ -1,5 +1,7 @@
 //import {v2 as cloudinary} from 'cloudinary'
-const cloudinary = require('cloudinary').v2;
+//const cloudinary = require('cloudinary').v2;
+import cloudinary from 'cloudinary'; 
+const { v2 } = cloudinary; 
 
 const connectCloudinary=async ()=> {
   cloudinary.config({
@@ -8,4 +10,4 @@ const connectCloudinary=async ()=> {
     api_secret:process.env.CLOUDINARY_SECRET_KEY
   })
 }
-module.exports = connectCloudinary;
+export default connectCloudinary;
