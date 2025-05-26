@@ -5,7 +5,8 @@
 
 import dotenv from "dotenv";
 dotenv.config();
-import { v2 } from "cloudinary";
+import pkg from 'cloudinary';
+const {v2: cloudinary} = pkg;
 
 const connectCloudinary=async ()=> {
   v2.config({  
