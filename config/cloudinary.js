@@ -1,7 +1,7 @@
 //import {v2 as cloudinary} from 'cloudinary'
 const cloudinary = require('cloudinary');
 //import cloudinary from 'cloudinary'; 
-const { v2 } = cloudinary; 
+//const { v2 } = cloudinary; 
 
 const connectCloudinary=async ()=> {
   cloudinary.config({
