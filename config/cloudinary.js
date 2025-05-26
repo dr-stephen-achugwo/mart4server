@@ -1,8 +1,3 @@
-//import {v2 as cloudinary} from 'cloudinary'
-//const cloudinary = require('cloudinary');
-//import cloudinary from 'cloudinary'; 
-//const { v2 } = cloudinary; 
-
 import dotenv from "dotenv";
 dotenv.config();
 import pkg from 'cloudinary';
